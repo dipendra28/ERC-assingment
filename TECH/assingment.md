@@ -29,9 +29,9 @@ the box)
 
 | Jumper Wires | 10 | 15 | Robu |
 
-| Oled display | 1 | 200 | Robu |
+| 4 Digit clock display | 1 | 50 | Robu |
 
-Total kit price = 858Rs
+Total kit price = 708 Rs
 
 **in circuit diagram i have shown Lcd display because no oled display was available in that cad software we can instead this oled display which is convenient and budget friendly.
 ### Circuit Diagram
