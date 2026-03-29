@@ -14,14 +14,23 @@ the box)
 ## Answer
 ### Bill of Materials (BOM)
 | Component | Quantity | Approx Price(Rs) | source|
+
 | Arduino UNO R3 | 1 | 500 | Robu |
+
 | Breadboard | 1 | 40 | Robu |
+
 | Push Button| 1 | 50 | Robu |
+
 | Buzzer | 1 | 50 | Robu |
+
 | Resistor | 1  | 1 | Robu |
+
 | Red LED | 1 | 2 | Robu | 
+
 | Jumper Wires | 10 | 15 | Robu |
+
 | Oled display | 1 | 200 | Robu |
+
 Total kit price = 858Rs
 
 **in circuit diagram i have shown Lcd display because no oled display was available in that cad software we can instead this oled display which is convenient and budget friendly.
