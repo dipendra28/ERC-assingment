@@ -12,6 +12,7 @@ within a budget of 1k per kit. (Don’t restrict yourself to the given example t
 the box)
 
 ## Answer
+### Reaction Time Tester
 ### Bill of Materials (BOM)
 | Component | Quantity | Approx Price(Rs) | source|
 
