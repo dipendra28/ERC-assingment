@@ -124,7 +124,15 @@ void loop() {
   delay(3000);
 
 }
-### Explanation 
+### Working and Key functions used
+The circuit works as a reaction time tester, which records the human time reaction and displays on the digital display for each round. when the simulation starts, the 4 digit clock display shows only dash dash dash dash.After a random delay of 2 to 5 seconds the LED turns on and glows. The user observes the LED signal visually and tries to press the push button as quick as possible. The moment button is pressed the buzzer beeps to confirm that the user has pressed the button. Now, the time difference between LED turning ON and the button being pressed is caluclated in miliseconds and displayed on the 4 digit clock display. That is the reaction time of the user.
+
+key functions used are-
+
+millis() function is used to measure time in milliseconds
+
+ranodm() funciton is used to give a random delay for turning on the LED so that the user cannot anticipate when the LED will glow
+
 
 
 
