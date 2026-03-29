@@ -38,5 +38,5 @@ Total kit price = 858Rs
 ![Circuit](Circuit.png)
 
 ### Schematic
-[Download schematic](schematic.pdf)
+![Schematic](Schematic.png)
 
