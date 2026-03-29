@@ -34,5 +34,6 @@ the box)
 Total kit price = 858Rs
 
 **in circuit diagram i have shown Lcd display because no oled display was available in that cad software we can instead this oled display which is convenient and budget friendly.
-### 
+### Circuit Diagram
+![circuitdiagram](circuitdiagram.png)
 
