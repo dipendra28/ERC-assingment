@@ -1,4 +1,4 @@
-# Question 2
+## Question 2
 2.You've seen robotic arms on factory floors — seamlessly grabbing, moving, and placing
 objects with surgical precision. Now it's your turn to build one. Model a pick-and-place
 robotic arm with a functioning conveyor belt and gripper in MATLAB Simscape
