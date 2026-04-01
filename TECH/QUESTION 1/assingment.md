@@ -1,5 +1,3 @@
-# TECH SECTION
-
 ## Question 1
 
 1.ERC is planning to introduce a fun weekend project where participants build an
