@@ -9,4 +9,18 @@ the repo :)
 
 ## Answer
 
-###
+### Tools and Libraries Used
+ Python
+ NumPy — for math and FFT computations
+ SciPy — for reading wav files and designing filters
+ Matplotlib — for plotting graphs
+
+ ### Stage 1
+ 
+ What I found and did - Loaded the corrupted.wav and extracted the sample rate and data list of frequencies from it and plotted in time domain. It didn't look like normal audio. Then calculated FFT and found peak frequency at 7300Hz which was not normal because normal speech lives in between 0 to 4000Hz. I concluded that the frequency of the signal was shifted from 0-4000Hz to 7300Hz
+
+ ### Stage 2
+
+ 
+ 
+
