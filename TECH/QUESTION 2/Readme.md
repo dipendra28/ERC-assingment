@@ -55,20 +55,30 @@ This enables or disables contact force calculation depending on whether the belt
 Used to pass the belt frame references across the diagram without drawing crossing lines.
 [Out] → carries Belt Out frame reference.
 [In] → carries Belt In frame reference.
-What Each Value Represents
+
+## What Each Value Represents
 Belt Geometry — Belt Out and Belt In
 
 Conveyor Length (belt_l) = 0.4 m — length of the belt along the travel direction
+
 Conveyor Depth (belt_h) = 0.02 m — thickness of the belt
+
 Conveyor Width (belt_w) = 0.1 m — width of the belt surface
+
 Normal Axis = +Z — belt surface faces upward
 
 Box to Belt Contact Force Parameters
 
 PlaB Length x (belt_l) = 0.4 m — belt contact plane length matches belt size
+
 PlaB Length y (belt_w) = 0.1 m — belt contact plane width matches belt size
+
 PlaB Depth to Ref Frame (belt_h/2) = 0.01 m — half belt thickness, center reference
+
 FacF Length x (cube_d) = 0.06 m — box face is 6 cm wide
+
 FacF Length y (cube_d) = 0.06 m — box face is 6 cm deep
+
 FacF Depth to Ref Frame (cube_d/2) = 0.03 m — half box size, center of box face
+
 FacF Sphere Radius (cube_con_rsph) = 0.003 m — small contact sphere for smooth collision detection
