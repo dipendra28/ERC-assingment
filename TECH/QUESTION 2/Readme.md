@@ -9,7 +9,7 @@ missing. You'll need to understand the kinematics, fix the connections, and get 
 whole thing running
 ## Answer
 ### How did I figure out the connections
-I used Claude AI to understand what exactly matlab and its features what is block and ports. I sent the gif video to it told to explain what is exactly happening here in the animataion. Understood the uses of each portsprocess step by step and going through readme helped doing connections and did all the connections.
+I used Claude AI to understand what exactly matlab is and its features what is block and ports. I sent the gif video to it told to explain what is exactly happening here in the animataion. Understood the uses of each portsprocess step by step and going through readme helped doing connections and did all the connections.
 
 ### 1. Transform Belt Out & Transform Belt In
 
