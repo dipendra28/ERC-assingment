@@ -1,0 +1,2 @@
+## Tools Used
+This T-shirt design is not completely AI-generated. I used Canva for the T-shirt mockup template. The car images and racetrack effects were taken from Google and then modified and edited. I also used the PixeLab mobile app to add custom fonts that I downloaded from Google Fonts. The robot design on the back of the T-shirt was sourced from Pinterest and incorporated into the final design.
