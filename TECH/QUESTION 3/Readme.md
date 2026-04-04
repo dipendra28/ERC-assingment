@@ -12,8 +12,11 @@ the repo :)
 ### Tools and Libraries Used
  Python
  NumPy — for math and FFT computations
+ 
  SciPy — for reading wav files and designing filters
+ 
  Matplotlib — for plotting graphs
+ 
 
  ### Stage 1
  
