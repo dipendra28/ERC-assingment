@@ -5,11 +5,7 @@ Name - Deependra kumar Vastrakar
 Rollno. - 25b1310
 
 Branch - Electrical 
-## NONTECH
+## SOP
 
-
-
-
-## TECH
 
 
