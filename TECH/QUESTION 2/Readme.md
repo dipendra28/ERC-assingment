@@ -11,13 +11,13 @@ whole thing running
 ### How did I figure out the connections
 I used Claude AI to understand what exactly matlab and its features what is block and ports. I sent the gif video to it told to explain what is exactly happening here in the animataion. Understood the uses of each portsprocess step by step and going through readme helped doing connections and did all the connections.
 
-#### 1. Transform Belt Out & Transform Belt In
+### 1. Transform Belt Out & Transform Belt In
 
 Frame B connected to the World Frame — sets the physical position of each belt in 3D space.
 Frame F connected to the Box to Belt Force blocks — passes the frame location so contact forces can be calculated between the box face and the belt surface.
 These transforms were needed to correctly orient each belt along the correct axis so the box slides in the right direction.
 
-#### 2. Box to Belt Out Force & Box to Belt In Force
+### 2. Box to Belt Out Force & Box to Belt In Force
 
 Out port - connected back to the belt transform — outputs the resulting contact force.
 PlaB port -  connected to the belt frame — represents the belt's flat plane surface.
@@ -32,35 +32,36 @@ Ctr port - receives control signal — turns the belt on or off.
 End port - signals end of belt travel.
 Both belts use the same geometric parameters since the box and belt dimensions are matched.
 
-4. Damper Gripper Force Block
+### 4. Damper Gripper Force Block
 
 Connected between the Box and the Gripper subsystem.
-Bfa/Bfb ports → connected to Box frame outputs (Fa, Fb) — receives force data from both sides of the box.
-Fa/Fb ports → pass forces forward to the Gripper — so the gripper knows how hard to grip.
+Bfa/Bfb ports - connected to Box frame outputs (Fa, Fb) — receives force data from both sides of the box.
+Fa/Fb ports - pass forces forward to the Gripper — so the gripper knows how hard to grip.
 This block acts as a damper to smooth out the gripping force and prevent sudden force spikes.
 
-5. Gripper Subsystem
+### 5. Gripper Subsystem
 
 Contains: Base, Post, Cylindrical Post, Rod, Prismatic Finger A & B, Transform EE, Transform Post Ctr
 Finger z (port 1) - controls finger position along z-axis (open/close).
 Gripper q (port 2) - outputs gripper joint angle.
 Post z (port 3) - controls vertical height of the post.
 Post q (port 4) - outputs post joint position.
-The two prismatic fingers (A and B) move symmetrically — Finger B is driven by -1 × Finger A signal to mirror the motion.
+The two prismatic fingers (A and B) move symmetrically — Finger B is driven by -1 times Finger A signal to mirror the motion.
 
-6. Bus Signals
+### 6. Bus Signals
 
 bus On signal connects to both Belt Out and Belt In force blocks.
 This enables or disables contact force calculation depending on whether the belt is active at that moment in the simulation sequence.
 
-7. [In] and [Out] Goto/From Tags
+### 7. In and Out Goto
 
 Used to pass the belt frame references across the diagram without drawing crossing lines.
-[Out] → carries Belt Out frame reference.
-[In] → carries Belt In frame reference.
+Out - carries Belt Out frame reference.
+In - carries Belt In frame reference.
 
 ### What Each Value Represents
-Belt Geometry — Belt Out and Belt In
+
+### Belt Geometry — Belt Out and Belt In
 
 Conveyor Length (belt_l) = 0.4 m — length of the belt along the travel direction
 
