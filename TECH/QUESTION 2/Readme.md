@@ -7,6 +7,9 @@ simulated in 3D. The catch? You're getting a broken, unconnected Simscape model 
 your starting point. Blocks are there. Wires aren't. Parameters are wrong. Rotations are
 missing. You'll need to understand the kinematics, fix the connections, and get the
 whole thing running
+## Answer
+### How did I figure out the connections
+I used Claude AI to understand what exactly matlab and its features what is block and ports. I sent the gif video to it told to explain what is exactly happening here in the animataion. Understood the uses of each portsprocess step by step and going through readme helped doing connections and did all the connections.
 
 1. Transform Belt Out & Transform Belt In
 
@@ -16,17 +19,17 @@ These transforms were needed to correctly orient each belt along the correct axi
 
 2. Box to Belt Out Force & Box to Belt In Force
 
-Out port → connected back to the belt transform — outputs the resulting contact force.
-PlaB port → connected to the belt frame — represents the belt's flat plane surface.
-FacF port → connected to the box frame — represents the face of the box making contact.
-In port → receives the bus signal (bus On) — enables/disables force when the belt is active.
+Out port - connected back to the belt transform — outputs the resulting contact force.
+PlaB port -  connected to the belt frame — represents the belt's flat plane surface.
+FacF port - connected to the box frame — represents the face of the box making contact.
+In port - receives the bus signal (bus On) — enables/disables force when the belt is active.
 These blocks model planar contact forces between the square box face and the conveyor belt surface.
 
-3. Belt Out & Belt In (Conveyor Blocks)
+3. Belt Out & Belt In 
 
-Spd port → receives speed input signal — controls how fast the belt moves.
-Ctr port → receives control signal — turns the belt on or off.
-End port → signals end of belt travel.
+Spd port - receives speed input signal — controls how fast the belt moves.
+Ctr port - receives control signal — turns the belt on or off.
+End port - signals end of belt travel.
 Both belts use the same geometric parameters since the box and belt dimensions are matched.
 
 4. Damper Gripper Force Block
@@ -39,10 +42,10 @@ This block acts as a damper to smooth out the gripping force and prevent sudden 
 5. Gripper Subsystem
 
 Contains: Base, Post, Cylindrical Post, Rod, Prismatic Finger A & B, Transform EE, Transform Post Ctr
-Finger z (port 1) → controls finger position along z-axis (open/close).
-Gripper q (port 2) → outputs gripper joint angle.
-Post z (port 3) → controls vertical height of the post.
-Post q (port 4) → outputs post joint position.
+Finger z (port 1) - controls finger position along z-axis (open/close).
+Gripper q (port 2) - outputs gripper joint angle.
+Post z (port 3) - controls vertical height of the post.
+Post q (port 4) - outputs post joint position.
 The two prismatic fingers (A and B) move symmetrically — Finger B is driven by -1 × Finger A signal to mirror the motion.
 
 6. Bus Signals
@@ -56,7 +59,7 @@ Used to pass the belt frame references across the diagram without drawing crossi
 [Out] → carries Belt Out frame reference.
 [In] → carries Belt In frame reference.
 
-## What Each Value Represents
+### What Each Value Represents
 Belt Geometry — Belt Out and Belt In
 
 Conveyor Length (belt_l) = 0.4 m — length of the belt along the travel direction
