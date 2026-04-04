@@ -11,13 +11,13 @@ whole thing running
 ### How did I figure out the connections
 I used Claude AI to understand what exactly matlab and its features what is block and ports. I sent the gif video to it told to explain what is exactly happening here in the animataion. Understood the uses of each portsprocess step by step and going through readme helped doing connections and did all the connections.
 
-1. Transform Belt Out & Transform Belt In
+#### 1. Transform Belt Out & Transform Belt In
 
 Frame B connected to the World Frame — sets the physical position of each belt in 3D space.
 Frame F connected to the Box to Belt Force blocks — passes the frame location so contact forces can be calculated between the box face and the belt surface.
 These transforms were needed to correctly orient each belt along the correct axis so the box slides in the right direction.
 
-2. Box to Belt Out Force & Box to Belt In Force
+#### 2. Box to Belt Out Force & Box to Belt In Force
 
 Out port - connected back to the belt transform — outputs the resulting contact force.
 PlaB port -  connected to the belt frame — represents the belt's flat plane surface.
@@ -25,7 +25,7 @@ FacF port - connected to the box frame — represents the face of the box making
 In port - receives the bus signal (bus On) — enables/disables force when the belt is active.
 These blocks model planar contact forces between the square box face and the conveyor belt surface.
 
-3. Belt Out & Belt In 
+### 3. Belt Out & Belt In 
 
 Spd port - receives speed input signal — controls how fast the belt moves.
 Ctr port - receives control signal — turns the belt on or off.
